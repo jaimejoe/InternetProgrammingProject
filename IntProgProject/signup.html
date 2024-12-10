@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign Up</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src='script.js'></script>
+</head>
+
+<body>
+    <form action="index.html" method="get" target="_blank" onsubmit="SignUp();">        
+        <div class="signup-container">
+            <h1>Sign Up</h1>
+            <br />
+            <br />
+            <div class="signup-fields">
+                <label for="username">Username: </label>
+                <input type="text" name="firstname" id="firstname" required />
+                <br />
+                <br />
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" required />
+                <br />
+                <br />
+                <button type="button" onclick="ClearAll()">Clear All</button>
+                <button type="submit">Submit</button>
+                <br />
+                <br />
+                <p>Have an account?</p><a href="login.html">Login</a>
+            </div>
+        </div>
+    </form>
+    <script src='script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Reserve</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='script.js'></script>
+</head>
+<body>
+    <script>
+        const username = getCookie("loggedInUser");
+        if (!username) {
+            window.location.href = "login.html";
+        }
+    </script>
+    
+    
+    <header>
+        <h1>PhotoThing</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="reserve.html">Reserve</a>
+            <a href="findus.html">Find Us</a>
+        </nav>
+        <div class="account-buttons">
+            <script src="script.js"></script>
+            <script>
+                UpdateLoginStatus();
+            </script>
+        </div>
+        
+    </header>
+    <main>
+    
+        <div class="reserve">
+            <h1>Reserve Now</h1>
+            <p>Pick a date to demand a reservation</p>
+            <h2>Reservation
+                <input type="datetime-local" id="DatetimeLocal">
+                <button onclick="ReserveDate()">Submit</button>
+            </h2>
+            <div class="reservation-status"></div>
+        </div>
+    </main>
+    
+</body>
+
+</html>
